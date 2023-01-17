@@ -12,9 +12,10 @@ import NewProduct from "./pages/newProduct/NewProduct";
 import Login from "./pages/login/Login";
 
 function App() {
-  const admin = JSON.parse(
+/*   const admin = JSON.parse(
     JSON.parse(localStorage.getItem("persist:root")).user
   ).currentUser.isAdmin;
+ */
 
   return (
     <Router>
@@ -22,7 +23,7 @@ function App() {
         <Route path="/login">
           <Login />
         </Route>
-        {admin && (
+        {/* admin &&  */(
           <>
             <Topbar />
             <div className="container">
